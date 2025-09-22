@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Escape Libre — Equipamiento de Camionetas</title>
+  <meta name="description" content="Escape Libre: equipamiento para camionetas y 4x4 en el NOA. Accesorios, montaje para minería y flotas, atención en Salta." />
+  <link rel="icon" href="favicon.png"><!-- TODO: reemplaza por tu favicon -->
+  <style>
+    :root{
+      --bg:#0c0f14;
+      --card:#151a22;
+      --brand:#11c26d;   /* verde Escape Libre */
+      --brand2:#26a0f5;  /* azul opcional */
+      --txt:#e9eef5;
+      --muted:#9fb1c4;
+      --shadow:0 8px 24px rgba(0,0,0,.25);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#0b0e13 0%, #0f141b 100%);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.5}
+    a{color:var(--brand);text-decoration:none}
+    header{position:sticky;top:0;z-index:50;background:rgba(12,15,20,.8);backdrop-filter:blur(8px);border-bottom:1px solid #1e2632}
+    .wrap{max-width:1120px;margin:auto;padding:0 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .logo{display:flex;gap:.6rem;align-items:center;font-weight:800;letter-spacing:.3px}
+    .logo-badge{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:var(--shadow)}
+    .nav a{color:var(--txt);opacity:.85;margin-left:18px}
+    .nav a:hover{opacity:1;color:#fff}
+    .btn{display:inline-block;padding:10px 16px;border-radius:12px;border:1px solid #2a3444;background:#111722;color:#fff}
+    .btn-brand{background:linear-gradient(135deg,var(--brand),var(--brand2));border:none;color:#071218; font-weight:700}
+    .hero{padding:72px 0 40px;border-bottom:1px solid #1e2632}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px}
+    .hero h1{font-size:clamp(28px,4.4vw,48px);line-height:1.1;margin:0 0 10px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .hero-card{background:radial-gradient(1200px 400px at 10% -10%, rgba(17,194,109,.10), transparent),var(--card);padding:22px;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #202938}
+    .grid{display:grid;gap:18px}
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    .kpi{background:#0f141c;border:1px solid #202938;border-radius:14px;padding:12px}
+    .kpi b{font-size:20px}
+    section{padding:42px 0}
+    h2{margin:0 0 14px;font-size:clamp(22px,3.2vw,30px)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid #202938;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .thumb{aspect-ratio:16/10;background:#0a0e13;display:block}
+    .card-body{padding:14px}
+    .price{display:flex;align-items:center;gap:8px}
+    .price .tag{background:#0f1a13;color:#9ff3c6;border:1px solid #1d3b2b;padding:2px 8px;border-radius:999px;font-size:12px}
+    .muted{color:var(--muted)}
+    .news{display:grid;grid-template-columns:2fr 1fr;gap:18px}
+    article{background:var(--card);border:1px solid #202938;border-radius:16px;padding:16px}
+    .contact{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+    form{display:grid;gap:10px}
+    input,textarea{background:#0f141c;border:1px solid #243043;color:#eaf0f7;border-radius:12px;padding:12px;font:inherit}
+    label{font-size:14px;color:#b8c7d8}
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:10px 14px;border:1px solid #202938;border-radius:999px;background:#0f141c}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .footer{padding:28px 0;border-top:1px solid #1e2632;color:#8fa3ba}
+    iframe{width:100%;height:280px;border:0;border-radius:16px}
+    @media (max-width:960px){
+      .hero-grid,.cards,.news,.contact{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:640px){
+      .cards{grid-template-columns:1fr}
+      .kpis{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======= NAV ======= -->
+  <header>
+    <div class="wrap">
+      <nav class="nav">
+        <div class="logo">
+          <span class="logo-badge" aria-hidden="true"></span>
+          <span>Escape Libre</span>
+        </div>
+        <div class="links">
+          <a href="#productos">Productos</a>
+          <a href="#noticias">Noticias</a>
+          <a href="#contacto">Contacto</a>
+          <a class="btn btn-brand" href="https://wa.me/5493870000000" target="_blank" rel="noopener">WhatsApp</a>
+          <!-- TODO: reemplazar 5493870000000 por tu número en formato internacional -->
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="grid">
+          <div class="hero-card">
+            <h1>Equipamiento de camionetas y 4×4 para el NOA</h1>
+            <p>50 años de experiencia. Montajes para minería y flotas. Accesorios para Amarok, Hilux, Ranger y más. Envíos a todo el NOA.</p>
+            <div class="row">
+              <a class="btn btn-brand" href="#productos">Ver catálogo</a>
+              <a class="btn" href="#contacto">Pedir cotización</a>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><b>50+</b><br><span class="muted">Años de trayectoria</span></div>
+              <div class="kpi"><b>NOA</b><br><span class="muted">Cobertura regional</span></div>
+              <div class="kpi"><b>Minería</b><br><span class="muted">Equipos homologados</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <!-- Imagen de portada -->
+          <div class="thumb" style="background:url('hero.jpg') center/cover"></div>
+          <!-- TODO: reemplaza hero.jpg por una foto de producto/instalación -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PRODUCTOS ======= -->
+  <section id="productos">
+    <div class="wrap">
+      <h2>Productos destacados</h2>
+      <p class="muted">Accesorios de alta resistencia para trabajo y aventura. Pedí otros modelos por WhatsApp.</p>
+      <div class="cards">
+
+        <!-- Producto 1 -->
+        <div class="card">
+          <div class="thumb" style="background:url('barras-techo.jpg') center/cover"></div>
+          <div class="card-body">
+            <h3>Barras de techo Heavy-Duty</h3>
+            <p class="muted">Aluminio reforzado, carga máx. 120 kg. Compatibles con Amarok/Hilux/Ranger.</p>
+            <div class="price">
+              <span class="tag">$ Consultar</span>
+              <a class="btn btn-brand" href="https://wa.me/5493870000000?text=Hola%20Escape%20Libre,%20quiero%20info%20de%20Barras%20de%20techo" target="_blank">Consultar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="card">
+          <div class="thumb" style="background:url('estribos.jpg') center/cover"></div>
+          <div class="card-body">
+            <h3>Estribos laterales Antideslizantes</h3>
+            <p class="muted">Acero galvanizado, instalación sin perforar. Garantía 12 meses.</p>
+            <div class="price">
+              <span class="tag">$ Consultar</span>
+              <a class="btn btn-brand" href="https://wa.me/5493870000000?text=Hola%20Escape%20Libre,%20info%20de%20Estribos%20laterales" target="_blank">Consultar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="card">
+          <div class="thumb" style="background:url('defensa-delantera.jpg') center/cover"></div>
+          <div class="card-body">
+            <h3>Defensa delantera Minería</h3>
+            <p class="muted">Cumplimiento de normas de seguridad. Pintura poliuretánica.</p>
+            <div class="price">
+              <span class="tag">$ Consultar</span>
+              <a class="btn btn-brand" href="https://wa.me/5493870000000?text=Hola%20Escape%20Libre,%20info%20Defensa%20delantera" target="_blank">Consultar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tips para agregar/editar productos -->
+      <details style="margin-top:14px">
+        <summary>➕ Cómo agregar más productos (clic)</summary>
+        <p class="muted">Duplicá cualquier bloque <code>&lt;div class="card"&gt;...&lt;/div&gt;</code>, cambiá imagen, título, texto y el link de WhatsApp.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ======= NOTICIAS ======= -->
+  <section id="noticias">
+    <div class="wrap">
+      <h2>Noticias & Novedades</h2>
+      <div class="news">
+        <article>
+          <h3>Nuevo stock de cubiertas todo terreno</h3>
+          <p class="muted">Llegaron medidas 265/65R17 y 265/60R18. Ideal para flotas en altura. Instalación en el día.</p>
+          <a class="btn" href="#" aria-disabled="true">Leer más</a>
+          <!-- TODO: enlazar a tu blog o post de Instagram -->
+        </article>
+        <article>
+          <h3>Convenios para empresas mineras</h3>
+          <p class="muted">Atención a contratos anuales con mantenimiento programado y prioridad en repuestos.</p>
+          <a class="btn" href="#contacto">Solicitar propuesta</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACTO ======= -->
+  <section id="contacto">
+    <div class="wrap">
+      <h2>Contacto</h2>
+
+      <div class="contact">
+        <!-- Datos -->
+        <div>
+          <div class="row" style="margin-bottom:12px">
+            <span class="pill">📞 <a href="tel:+543870000000">+54 387 000 0000</a></span>
+            <sp
